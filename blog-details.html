@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blogy - Blog Details</title>
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogy - Blog Details</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/blog-details.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header></header>
 
-  <!-- ======= Header / Navbar ======= -->
-  <header>
-  </header>
-
-  <!-- ======= Main Content ======= -->
-  <main>
-    <section class="blog-details">
-        <nav>
+    <!-- Main Content   -->
+    <main>
+        <!-- page-title -->
+        <div class="page-title">
+          <nav class="breadcrumb">
             <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Category.html">Category</a></li>
-                <li>Blog Details</li>
+              <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i>  Home / </a></li> 
+              <li class="breadcrumb-item">
+                <a href="Category.html">Category /</a> 
+              </li>
+              <li class="breadcrumb-item active">Blog Details</li>
             </ol>
-        </nav>
-        <div class="blog-details-header">
+          </nav>
+          <div class="title-wrapper">
             <h1>Blog Details</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+        </div>
+
+        <!-- blog-details section -->
+        <div class="container">
+             <div class="grid-container">
+             <section class="blog-details">
+             <article>
+                 <div class="blog-details-image">
+                   <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp" alt="Blog Details" />
+                 </div>
+            <div class="blog-details-content">
             </div>
-    </section>
-  </main>
+            </article>
+        </section>
+   
+            <!-- blog-details sidebar -->
+            <div class="side-bar">
+            </div>
+          </div>
+        </div>
+    </main>
 
-
-  <!-- ======= Footer ======= -->
-</body>
+    <!-- Footer -->  
+  </body>
 </html>
