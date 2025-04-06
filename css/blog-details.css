@@ -1,14 +1,6 @@
 /* blog-details.css */
 
 
-body {
-    font-family: "Nunito", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
 .page-title{
  text-align: center;
  padding: 1.25rem 0;
@@ -26,7 +18,7 @@ body {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .title-wrapper p{
@@ -37,6 +29,10 @@ body {
 }
 
 
+.breadcrumb{
+    padding-bottom: 1.5rem; 
+}
+
 .breadcrumb ol{
     display: flex;
     align-items: center;
@@ -46,8 +42,13 @@ body {
 }
 
 
+
 .breadcrumb .breadcrumb-item a i{
     padding-right: 0.125rem;
+}
+
+.breadcrumb .breadcrumb-item a span{
+    margin-left: .5rem;
 }
 
 .breadcrumb .breadcrumb-item a{
@@ -81,12 +82,127 @@ body {
 
 .blog-details{
     grid-column: 1 / span 2;
+    color: rgb(33, 37, 41);
+    font-family: 'Roboto', sans-serif;
 }
 
 
+
+
+.blog-details-content {
+    padding: 1rem 0;
+    border-bottom: 1px solid color-mix(in srgb, #212529, transparent 90%);
+    padding-bottom: 2rem;
+    
+}
+
+.blog-details-image{
+    position: relative;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+}
 
 .blog-details-image img{
     border-radius: 1rem;
 }
 
 
+.overly-info{
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  
+}
+
+.overly-info button{
+    background-color: #f75815;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.blog-details-content h2 {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+.author-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.author-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.author-details img{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+
+.name-job{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.name-job h4{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #2d465e
+    ;
+}
+
+.name-job p{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    color: #212529cc;
+}
+
+
+
+.date-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.9375rem;
+    color: #212529b3
+    ;
+    
+}
+
+.date-info p, span, i{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
