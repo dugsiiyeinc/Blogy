@@ -207,7 +207,6 @@ i {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   color: color(srgb 0.129412 0.145098 0.160784 / 0.9);
-
 }
 
 .content-left h4 {
@@ -221,19 +220,20 @@ i {
   font-weight: 400;
   margin-top: 1rem;
   font-family: "Roboto", sans-serif;
-
 }
 
 .content-left ul {
   font-size: 1.125rem;
   line-height: 2.0625rem;
   margin-top: 1rem;
-  font-weight: 400;
+  list-style-type: disc;
+  margin-left: 1rem;
 }
 
 .content-left ul li {
   font-family: "Roboto", sans-serif;
-  padding:  0.5rem 0;
+  padding: 0.2rem 0;
+  font-weight: 400;
 }
 
 .img-right {
@@ -244,15 +244,12 @@ i {
   height: 21rem;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  overflow: hidden
-
+  overflow: hidden;
 }
 
 .img-right img {
-    height: auto;
+  height: auto;
 }
-
-
 
 .img-right .overly {
   position: absolute;
@@ -263,5 +260,41 @@ i {
   font-size: 0.875rem;
   text-align: center;
   padding: 1rem;
+}
 
+.trends {
+  background: color-mix(in srgb, #f75815, transparent 95%);
+  border-radius: 12px;
+  margin-top: 2rem;
+  color: #2d465e;
+  padding: 2rem;
+  width: 100%;
+}
+
+.trends h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.trends ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.trends ul li {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.trends ul li i {
+  color: #f75815;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 0.5rem;
 }
