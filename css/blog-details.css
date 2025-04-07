@@ -206,3 +206,26 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+
+.detailed-info{
+margin-top: 2rem;
+}
+
+
+.detailed-info .desc1, .desc2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3125rem;
+    line-height: 2.3125rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #2d465e;
+}
+
+
+.detailed-info .desc2{
+    font-size: 1.125rem;
+    line-height: 2.0625rem;
+    font-weight: 400;
+    color: #212529e6;
+}
