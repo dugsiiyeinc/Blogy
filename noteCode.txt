@@ -1,0 +1,19 @@
+/* .grid-two .contect{
+    position: absolute;
+    bottom: 50px;
+    padding: 20px;
+} */
+/* .grid-two  .pragraph p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    padding-top: 10px;
+    color: #eee;
+    cursor: pointer;
+    }
+
+    .grid-two .contect span{
+        font-size: 0.95rem;
+        line-height: 1.125rem;
+        color: #ffff;
+     } */
