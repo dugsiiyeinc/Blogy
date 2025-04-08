@@ -72,9 +72,11 @@
 
 .blog-details {
   grid-column: 1 / span 2;
-  color: rgb(33, 37, 41);
+  color: rgb(45, 70, 94);
   font-family: "Roboto", sans-serif;
 }
+
+
 
 .blog-details-content {
   padding: 1rem 0;
@@ -90,6 +92,12 @@
 
 .blog-details-image img {
   border-radius: 1rem;
+}
+
+
+.info{
+border-bottom: 1px solid color-mix(in srgb, #212529, transparent 90%);
+padding-bottom: 2rem;
 }
 
 .overly-info {
@@ -303,8 +311,8 @@ i {
   color: #2d465e;
   font-size: 2rem;
   font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .performance-desc {
@@ -351,17 +359,101 @@ blockquote::before {
 }
 
 
+.cards{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 .card{
   background-color: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   padding: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
 }
 
+.card:hover{
+transform: translateY(-5px);
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 
 .info-card i{
   font-size: 2rem;
   color: #f75815;
+}
+
+.info-card h5{
+  font-size: 1.3125rem;
+  font-weight: 500;
+}
+
+
+.info-card p{
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: color(srgb 0.129412 0.145098 0.160784 / 0.9);
+}
+
+
+.related-topics h5{
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.related-topics button {
+  background: color-mix(in srgb, #f75815, transparent 90%);
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #f75815;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.related-topics button:hover{
+  background-color: #f75815;
+  color: #fff;
+}
+
+.icons{
+  display: flex;
+  gap: 1rem;
+
+}
+
+
+
+.related-topics .icons a{
+  background: color-mix(in srgb, #f75815, transparent 90%);
+  color: #f75815;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1875rem;
+
+}
+
+.related-topics button:hover{
+  background-color: #f75815;
+  color: #fff;
+}
+
+.author-card{
+  margin-top: 5rem;
 }
