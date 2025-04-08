@@ -10,10 +10,42 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="css/HomePage.css">
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <div class="container">
+      <header class="header">
+          <div class="logo">Blogy</div>
+          <div class="left">
+              <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="search">
+                  <input type="text" name="search" id="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+          </div>
+      </header>
+  </div>
+
+  <!-- nav-bar -->
+   <section class="nav-cover">
+      <div class="container">
+          <nav class="nav-bar">
+              <ul>
+                  <li><a href="Home">Home</a></li>
+                  <li><a href="About">About</a></li>
+                  <li><a href="Category">Category</a></li>
+                  <li><a href="Blog-deteil">Blog -deteil</a></li>
+                  <li><a href="Author-Profile">Author Profile</a></li>
+                  <li><a href="Pages">Pages</a></li>
+                  <li><a href="Contect">Contect</a></li>
+              </ul>
+          </nav>
+      </div>
+   </section>
 
     <!-- Main Content   -->
     <main>
@@ -223,17 +255,28 @@
           <!-- Author's info section  -->
           <section>
             <div class="author-card">
-              <div class="img-icons"></div>
+              <div class="img-icons">
+                <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-12.webp" alt="author-photo">
+                <div class="socials-icons">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
               <div class="more-author-info">
+                <div class="author-name-job">
                 <h5>Sarah Anderson</h5>
-                <span>Senior Tech Writer &amp; Developer Advocate</span>
-                <p>
+                <p>Senior Tech Writer &amp; Developer Advocate</p>
+                </div>
+                <p class="desc">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium. Passionate about creating
                   content that bridges the gap between developers and end-users.
                 </p>
-                <div class="author-social">
-                  <a href="#"><i class="bi bi-globe"></i> sarahanderson.dev sarahanderson.dev </a>
+                <div class="author-socials">
+                  <a href="#"><i class="bi bi-globe"></i> sarahanderson.dev</a>
                   <a href="#">Read More from Sarah <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
@@ -246,6 +289,73 @@
       </div>
     </main>
 
-    <!-- Footer -->
+     <!-- footer Section Home Page Genaral Contect -->
+  <div class="container">
+    <div class="footer-grid">
+         <div class="blogy">
+             <h1 class="logo">Blogy</h1>
+             <div class="info">
+                 <span>A108 Adam Street</span>
+                 <span>New York, NY 535022</span>
+                 <span><strong>Phone</strong>+1 5589 55488 55</span>
+                 <span><strong>Email: </strong>leoaahel4@gmail.com</span>
+             </div>
+             <div class="social-icon">
+                 <i class="fa-brands fa-x-twitter"></i>
+                 <i class="fa-brands fa-facebook-f"></i>
+                 <i class="fa-brands fa-instagram"></i>
+                 <i class="fa-brands fa-linkedin"></i>
+             </div>
+         </div>
+         <div class="links">
+             <p>Useful Links</p>
+             <ul class="nav">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Service</a></li>
+                 <li><a href="">Team Service </a></li>
+                 <li><a href="">Privacy </a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Hic solutaset.</p>
+             <ul class="nav">
+                 <li><a href="#">Molestiae accusamus iure</a></li>
+                 <li><a href="#">Excepturi dignissimos</a></li>
+                 <li><a href="#">Suscipit distinctio</a></li>
+                 <li><a href="#">Dilecta </a></li>
+                 <li><a href="#">Sit quas consectetur</a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Nobis illum</p>
+             <ul class="nav">
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Web Developer</a></li>
+                 <li><a href="#">Service</a></li>
+                 <li><a href="#">Marketing  </a></li>
+                 <li><a href="#">Graphic Design</a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Our Service .</p>
+             <ul class="nav">
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Web Developer</a></li>
+                 <li><a href="#">Service</a></li>
+                 <li><a href="#">Marketing  </a></li>
+                 <li><a href="#">Graphic Design</a></li>
+             </ul>
+         </div>
+     </div>
+     <hr>
+   </div>
+ <div class="copyright">
+     <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
+     <div>
+     <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
+     </div>
+ </div>
+     
   </body>
 </html>
