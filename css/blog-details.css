@@ -959,5 +959,6 @@ align-items: center;
 
   .author-socials{
     justify-content: center;
+    align-items: center;
   }
 }
