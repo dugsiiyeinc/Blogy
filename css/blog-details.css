@@ -755,3 +755,154 @@ textarea::placeholder {
 }
 
 
+.side-bar{
+  width: 100%;
+  color: #2d465e;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.boxes{
+  background-color: color-mix(in srgb, #212529, transparent 98%);
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid #2d465e;
+  border: 1px solid color-mix(in srgb, #212529, transparent 90%);
+}
+
+.search-box label{
+  display: flex;
+  flex-direction: column;
+}
+.side-bar-title{
+font-size: 1.25rem;
+font-weight: 600;
+font-family: "Nunito", sans-serif;
+margin-bottom: 0.5rem;
+border-left: 4px solid #f75815;
+padding-left: 0.5rem;
+}
+
+
+.search-box input{
+  border: 1px solid color-mix(in srgb, #212529, transparent 90%);
+  border-radius: 1rem;
+  height: 2.5rem;
+  padding: 1rem;
+  width: 100%;
+
+}
+
+
+.input-search-icon{
+  position: relative;
+  width: 100%;
+
+}
+
+.input-search-icon i{
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categories ul{
+  display: flex;
+  flex-direction: column;
+gap: 0.8rem;
+list-style: none;
+}
+
+.categories ul li {
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+color: color-mix(in srgb, #212529, transparent 20%);
+transition: 0.3s;
+cursor: pointer;
+font-family: "Roboto", "sana-serif";
+}
+
+
+
+.categories ul li:hover{
+  color: #f75815;
+}
+
+.categories ul li span{  
+color: color-mix(in srgb, #212529, transparent 50%);
+font-weight: 400;
+font-size: 0.875rem;
+
+}
+
+
+
+.recent-posts{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recent-post{
+  display: flex;
+  gap: 0.7rem;
+}
+
+.recent-post a{
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.recent-post span{
+  color: color-mix(in srgb, #212529, transparent 50%);
+font-weight: 400;
+font-style: italic;
+}
+
+
+.recent-post a:hover{
+  color: #f75815;
+}
+
+
+.recent-posts img{
+  width: 5rem;
+}
+
+
+.tags-btn{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+.tags-btn button{
+  color: color-mix(in srgb, #212529, transparent 94%);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+font-family: "Roboto", "sana-serif";
+font-weight: 400;
+  color: color-mix(in srgb, #212529, transparent 30%);
+  font-size: 0.875rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tags-btn button:hover{
+  background-color: #f75815;
+  color: #fff;
+}
