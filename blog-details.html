@@ -6,114 +6,561 @@
     <title>Blogy - Blog Details</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="/css/blog-details.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/HomePage.css">
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <div class="container">
+      <header class="header">
+          <div class="logo">Blogy</div>
+          <div class="left">
+              <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="search">
+                  <input type="text" name="search" id="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+          </div>
+      </header>
+  </div>
+
+  <!-- nav-bar -->
+   <section class="nav-cover">
+      <div class="container">
+          <nav class="nav-bar">
+              <ul>
+                  <li><a href="Home">Home</a></li>
+                  <li><a href="About">About</a></li>
+                  <li><a href="Category">Category</a></li>
+                  <li><a href="Blog-deteil">Blog -deteil</a></li>
+                  <li><a href="Author-Profile">Author Profile</a></li>
+                  <li><a href="Pages">Pages</a></li>
+                  <li><a href="Contect">Contect</a></li>
+              </ul>
+          </nav>
+      </div>
+   </section>
 
     <!-- Main Content   -->
     <main>
-        <!-- page-title -->
-        <div class="page-title">
-          <nav class="breadcrumb">
-            <ol>
-              <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i>  Home <span> / </span> </a></li> 
-              <li class="breadcrumb-item">
-                <a href="Category.html">Category <span> / </span></a> 
-              </li>
-              <li class="breadcrumb-item active">Blog Details</li>
-            </ol>
-          </nav>
-          <div class="title-wrapper">
-            <h1>Blog Details</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-          </div>
+      <!-- page-title -->
+      <div class="page-title">
+        <nav class="breadcrumb">
+          <ol>
+            <li class="breadcrumb-item">
+              <a href="/HomePage.html"
+                ><i class="bi bi-house"></i> Home <span> / </span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="Category.html">Category <span> / </span></a>
+            </li>
+            <li class="breadcrumb-item active">Blog Details</li>
+          </ol>
+        </nav>
+        <div class="title-wrapper">
+          <h1>Blog Details</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
         </div>
+      </div>
 
-        <!-- blog-details section -->
-        <div class="container">
-             <div class="grid-container">
-             <section class="blog-details">
-             <article>
-                 <div class="blog-details-image">
-                   <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp" alt="Blog Details" />
-                   <div class="overly-info">
-                    <button>Web Development </button>
+      <!-- blog-details section -->
+      <div class="container border-b">
+        <div class="grid-container">
+          <div  class="blog-details">
+          <section>
+            <article class="article">
+              <!-- article info -->
+              <div class="info">
+                <div class="blog-details-image">
+                  <img
+                    src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp"
+                    alt="Blog Details"
+                  />
+                  <div class="overly-info">
+                    <button>Web Development</button>
                     <span class="dot"> • </span>
                     <span>6 min read</span>
-                   </div>
-                 </div>
-            <div class="blog-details-content">
-                <h2>Modern Web Development: Best Practices and Future Trends for 2025</h2>
-                <div class="author-info">
+                  </div>
+                </div>
+                <div class="blog-details-content">
+                  <h2>
+                    Modern Web Development: Best Practices and Future Trends for
+                    2025
+                  </h2>
+                  <div class="author-info">
                     <div class="author-details">
-                        <div class="author-img">
-                            <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-8.webp" alt="author photo">
-                        </div>
-                        <div class="name-job">
+                      <div class="author-img">
+                        <img
+                          src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-8.webp"
+                          alt="author photo"
+                        />
+                      </div>
+                      <div class="name-job">
                         <h4>Michael Chen</h4>
                         <p>Senior Web Developer</p>
-                        </div>
+                      </div>
                     </div>
                     <div class="date-info">
-                        <i class="bi bi-calendar3"></i>
-                        <p> Mar 15, 2025 </p>
-                        <span class="dot"> • </span>
-                        <i class="bi bi-chat-text"></i>
-                        <p> 18 Comments</p>
+                      <i class="bi bi-calendar3"></i>
+                      <p>Mar 15, 2025</p>
+                      <span class="dot"> • </span>
+                      <i class="bi bi-chat-text"></i>
+                      <p>18 Comments</p>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="detailed-info">
-               <p class="desc1">
-                The landscape of web development continues to evolve at an unprecedented pace, bringing new technologies, frameworks, and methodologies that reshape how we build modern web applications.
-               </p>
-               <p class="desc2">As we delve into 2025, the web development ecosystem has transformed dramatically, introducing innovative approaches to building faster, more secure, and highly engaging web experiences. This comprehensive guide explores the latest trends and best practices that are defining the future of web development.</p>
-            </div>
-            <div class="two-columns">
-                 <div class="content-left">
+                <div class="detailed-info">
+                  <p class="desc1">
+                    The landscape of web development continues to evolve at an
+                    unprecedented pace, bringing new technologies, frameworks,
+                    and methodologies that reshape how we build modern web
+                    applications.
+                  </p>
+                  <p class="desc2">
+                    As we delve into 2025, the web development ecosystem has
+                    transformed dramatically, introducing innovative approaches
+                    to building faster, more secure, and highly engaging web
+                    experiences. This comprehensive guide explores the latest
+                    trends and best practices that are defining the future of
+                    web development.
+                  </p>
+                </div>
+                <div class="two-columns">
+                  <div class="content-left">
                     <h4>The Rise of Web Components</h4>
-                    <p>Web Components have become increasingly crucial in modern web development, offering a standardized way to create reusable custom elements. Key advantages include:</p>
+                    <p>
+                      Web Components have become increasingly crucial in modern
+                      web development, offering a standardized way to create
+                      reusable custom elements. Key advantages include:
+                    </p>
                     <ul>
-                        <li>Enhanced code reusability across different frameworks</li>
-                        <li>Better encapsulation of functionality</li>
-                        <li>Improved maintenance and scalability</li>
-                        <li>Framework-agnostic component development</li>
+                      <li>
+                        Enhanced code reusability across different frameworks
+                      </li>
+                      <li>Better encapsulation of functionality</li>
+                      <li>Improved maintenance and scalability</li>
+                      <li>Framework-agnostic component development</li>
                     </ul>
-                 </div>
-                 <div class="img-right">
-                    <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-hero-2.webp" alt="someone writing something" />
+                  </div>
+                  <div class="img-right">
+                    <img
+                      src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-hero-2.webp"
+                      alt="someone writing something"
+                    />
                     <div class="overly">
-                        <p>Modern development environments emphasize collaboration and efficiency
-                        </p>
+                      <p>
+                        Modern development environments emphasize collaboration
+                        and efficiency
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- trends -->
+                <div class="trends">
+                  <h4>Key Trends in 2025</h4>
+                  <ul>
+                    <li>
+                      <i class="bi bi-lightning-charge"></i> Edge Computing and
+                      Serverless Architecture
+                    </li>
+                    <li>
+                      <i class="bi bi-shield-check"></i> Enhanced Security
+                      Measures
+                    </li>
+                    <li>
+                      <i class="bi bi-phone"></i> Progressive Web Apps (PWAs)
+                    </li>
+                  </ul>
+                </div>
+                <h5 class="performance">Performance Optimization</h5>
+                <p class="performance-desc">
+                  Performance remains a critical factor in web development, with
+                  an increasing focus on Core Web Vitals and user experience
+                  metrics. Modern applications must be optimized for both speed
+                  and efficiency.
+                </p>
+                <!-- blockquote -->
+                <blockquote>
+                  <p>
+                    "The future of web development lies not just in writing
+                    code, but in creating seamless, accessible, and performant
+                    experiences that work for everyone, everywhere."
+                  </p>
+                  <cite>Emily Thompson, Web Performance Architect</cite>
+                </blockquote>
+                <!-- cards -->
+                <div class="cards">
+                  <div class="card">
+                    <div class="info-card">
+                      <i class="bi bi-speedometer2"></i>
+                      <h5>Performance Metrics</h5>
+                      <p>
+                        Focus on Core Web Vitals and user-centric performance
+                        metrics for better search rankings and user experience.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="info-card">
+                      <i class="bi bi-universal-access"></i>
+                      <h5>Accessibility</h5>
+                      <p>
+                        Implementing WCAG guidelines and ensuring web
+                        applications are accessible to all users across
+                        different devices.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="performance">Looking Forward</h5>
+                <p class="performance-desc">
+                  As we continue through 2025, web development practices will
+                  further evolve, embracing new technologies while maintaining a
+                  strong foundation in performance, accessibility, and user
+                  experience. Staying updated with these trends and best
+                  practices is crucial for developers looking to build modern,
+                  scalable web applications.
+                </p>
+              </div>
+              <!-- related-topics -->
+              <div class="related-topics">
+                <h5>Related Topics</h5>
+                <button>Web Development</button>
+                <button>Performance</button>
+                <button>Best Practices</button>
+                <button>Trends</button>
+                <button>2025</button>
+                <div class="social-icons">
+                  <h5>Share Article</h5>
+                  <div class="icons">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Author's info section  -->
+          <section>
+            <div class="author-card">
+              <div class="img-icons">
+                <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-12.webp" alt="author-photo">
+                <div class="socials-icons">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <div class="more-author-info">
+                <div class="author-name-job">
+                <h5>Sarah Anderson</h5>
+                <p>Senior Tech Writer &amp; Developer Advocate</p>
+                </div>
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium. Passionate about creating
+                  content that bridges the gap between developers and end-users.
+                </p>
+                <div class="author-socials">
+                  <a href="#"><i class="bi bi-globe"></i> sarahanderson.dev</a>
+                  <a href="#">Read More from Sarah <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- comment section -->
+           <section class="comment-section">
+            <h5>Discussion <span>(8)</span></h5>
+             <div class="comments">
+               <div class="comment-card">
+                  <div class="commenter-photo-name">
+                    <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-9.webp" alt="commenter-photo">
+                  <div class="name-date">
+                    <h6>Sarah Williams</h6>
+                    <span> <i class="bi bi-calendar3"></i> February 13, 2025</span>
+                  </div>
+                  </div>
+                   <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+
+                   <div class="like-replay">
+                     <span class="like-button"><i class="bi bi-hand-thumbs-up"></i> 12</span>
+                     <span class="reply-button"><i class="bi bi-reply"></i> Reply</span>
+                   </div>
+               </div>
+            </div>
+            <div class="replays">
+              <div class="comments">
+                <div class="comment-card-1">
+                   <div class="commenter-photo-name">
+                     <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-m-9.webp" alt="commenter-photo">
+                   <div class="name-date">
+                     <h6>James Cooper</h6>
+                     <span> <i class="bi bi-calendar3"></i> February 13, 2025</span>
+                   </div>
+                   </div>
+                    <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+ 
+                    <div class="like-replay">
+                      <span class="like-button"><i class="bi bi-hand-thumbs-up"></i> 8</span>
+                      <span class="reply-button"><i class="bi bi-reply"></i> Reply</span>
                     </div>
                 </div>
+                <div class="comment-card">
+                   <div class="commenter-photo-name">
+                     <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-9.webp" alt="commenter-photo">
+                   <div class="name-date">
+                     <h6>Emily Parker</h6>
+                     <span> <i class="bi bi-calendar3"></i> February 13, 2025</span>
+                   </div>
+                   </div>
+                    <p>Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+ 
+                    <div class="like-replay">
+                      <span class="like-button"><i class="bi bi-hand-thumbs-up"></i> 5</span>
+                      <span class="reply-button"><i class="bi bi-reply"></i> Reply</span>
+                    </div>
+                </div>
+                <div class="comment-card">
+                   <div class="commenter-photo-name">
+                     <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-7.webp" alt="commenter-photo">
+                   <div class="name-date">
+                     <h6>Daniel Brown</h6>
+                     <span> <i class="bi bi-calendar3"></i> February 13, 2025</span>
+                   </div>
+                   </div>
+                    <p>Nam commodo suscipit quam. Vestibulum ullamcorper mauris at ligula. Fusce fermentum odio nec arcu.</p>
+ 
+                    <div class="like-replay">
+                      <span class="like-button"><i class="bi bi-hand-thumbs-up"></i> 3</span>
+                      <span class="reply-button"><i class="bi bi-reply"></i> Reply</span>
+                    </div>
+                </div>
+             </div>
             </div>
+            <div class="comments">
+              <div class="comment-card">
+                 <div class="commenter-photo-name">
+                   <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-m-6.webp" alt="commenter-photo">
+                 <div class="name-date">
+                   <h6>Rachel Adams</h6>
+                   <span> <i class="bi bi-calendar3"></i> February 13, 2025</span>
+                 </div>
+                 </div>
+                  <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
 
-            <div class="trends">
-                <h4>Key Trends in 2025</h4>
+                  <div class="like-replay">
+                    <span class="like-button"><i class="bi bi-hand-thumbs-up"></i> 6</span>
+                    <span class="reply-button"><i class="bi bi-reply"></i> Reply</span>
+                  </div>
+              </div>
+           </div>
+           </section>
+
+           <!-- comment form section  -->
+            <section class="comment-form-section">
+              <h5>Share Your Thoughts</h5>
+              <p>Your email address will not be published. Required fields are marked *</p>
+             <form action="comment">
+               <div class="name-email">
+                <label for="name" class="name">Full Name *
+                  <input type="text" placeholder="Enter Your Full Name">
+                 </label>
+                 <label for="email" class="email">Email Address *
+                  <input type="email" placeholder="Enter Your Email Address">
+                 </label>
+               </div>
+               <label for="website">Website
+                <input type="text" placeholder="Your Website (Optional)">
+               </label>
+               <label for="comment">Your Comment *</label>
+               <textarea placeholder="Write your Thoughts here..." rows="5" ></textarea>
+               <button class="submit-btn" type="submit">Post Comment</button>
+             </form>
+            </section>
+  
+        </div>
+          <!-- blog-details sidebar -->
+          <div class="side-bar">
+            <div class="search-box boxes">
+              <label for="search">
+                <span class="side-bar-title">Search</span>
+                <div class="input-search-icon">
+                <input type="search" placeholder="Search" >
+                <i class="bi bi-search"></i>
+              </div>
+              </label>
+            </div>
+            <div class="search-box boxes">
+              <div class="categories">
+                <h6 class="side-bar-title">Categories</h6>
                 <ul>
-                    <li> <i class="bi bi-lightning-charge"></i> Edge Computing and Serverless Architecture</li>
-                    <li><i class="bi bi-shield-check"></i> Enhanced Security Measures</li>
-                    <li><i class="bi bi-phone"></i> Progressive Web Apps (PWAs)</li>
+                  <li>General <span>(25)</span> </li>
+                  <li>Lifestyle <span> (12)</span></li>
+                  <li>Travel <span> (5)</span></li>
+                  <li>Design <span> (22)</span></li>
+                  <li>Creative <span> (8)</span></li>
+                  <li>Education <span> (14)</span></li>
                 </ul>
+              </div>
             </div>
-            <h5>Performance Optimization</h5>
-            <p>Performance remains a critical factor in web development, with an increasing focus on Core Web Vitals and user experience metrics. Modern applications must be optimized for both speed and efficiency.</p>
-
-            </article>
-        </section>
-            <!-- blog-details sidebar -->
-            <div class="side-bar">
+            <div class="search-box boxes">
+              <div class="categories">
+                <h6 class="side-bar-title">Categories</h6>
+                <ul>
+                  <li>General <span>(25)</span> </li>
+                  <li>Lifestyle <span> (12)</span></li>
+                  <li>Travel <span> (5)</span></li>
+                  <li>Design <span> (22)</span></li>
+                  <li>Creative <span> (8)</span></li>
+                  <li>Education <span> (14)</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-box boxes">
+              <div class="recent-posts">
+                    <h6 class="side-bar-title">Recent Posts</h6>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-1.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Nihil blanditiis at in nihil autem</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-2.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Quidem autem et impedit</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-3.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Id quia et et ut maxime similique occaecati ut</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-4.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Laborum corporis quo dara net para</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-5.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Laborum corporis quo dara net para</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="search-box boxes">
+                <div class="tags">
+                  <h6 class="side-bar-title">Tags</h6>
+                    <div class="tags-btn">
+                      <button>App</button>
+                      <button>IT</button>
+                      <button>Business</button>
+                      <button>Mac</button>
+                      <button>Design</button>
+                      <button>Office</button>
+                      <button>Creative</button>
+                      <button>Studio</button>
+                      <button>Smart</button>
+                      <button>Tips</button>
+                      <button>Marketing</button>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
     </main>
 
-    <!-- Footer -->  
+     <!-- footer Section Home Page Genaral Contect -->
+  <div class="container">
+    <div class="footer-grid">
+         <div class="blogy">
+             <h1 class="logo">Blogy</h1>
+             <div class="info">
+                 <span>A108 Adam Street</span>
+                 <span>New York, NY 535022</span>
+                 <span><strong>Phone</strong>+1 5589 55488 55</span>
+                 <span><strong>Email: </strong>leoaahel4@gmail.com</span>
+             </div>
+             <div class="social-icon">
+                 <i class="fa-brands fa-x-twitter"></i>
+                 <i class="fa-brands fa-facebook-f"></i>
+                 <i class="fa-brands fa-instagram"></i>
+                 <i class="fa-brands fa-linkedin"></i>
+             </div>
+         </div>
+         <div class="links">
+             <p>Useful Links</p>
+             <ul class="nav">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Service</a></li>
+                 <li><a href="">Team Service </a></li>
+                 <li><a href="">Privacy </a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Hic solutaset.</p>
+             <ul class="nav">
+                 <li><a href="#">Molestiae accusamus iure</a></li>
+                 <li><a href="#">Excepturi dignissimos</a></li>
+                 <li><a href="#">Suscipit distinctio</a></li>
+                 <li><a href="#">Dilecta </a></li>
+                 <li><a href="#">Sit quas consectetur</a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Nobis illum</p>
+             <ul class="nav">
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Web Developer</a></li>
+                 <li><a href="#">Service</a></li>
+                 <li><a href="#">Marketing  </a></li>
+                 <li><a href="#">Graphic Design</a></li>
+             </ul>
+         </div>
+         <div class="links">
+             <p>Our Service .</p>
+             <ul class="nav">
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Web Developer</a></li>
+                 <li><a href="#">Service</a></li>
+                 <li><a href="#">Marketing  </a></li>
+                 <li><a href="#">Graphic Design</a></li>
+             </ul>
+         </div>
+     </div>
+     <hr>
+   </div>
+ <div class="copyright">
+     <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
+     <div>
+     <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
+     </div>
+ </div>
+     
   </body>
 </html>
