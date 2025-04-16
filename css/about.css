@@ -152,21 +152,83 @@
    width: 100%;
    height: 100%;
    background-color: rgba(128, 128, 128, 0.205);
+   padding:  60px 0 ;
 }
-/* .box-container-all img{
-width: 100%;
-height: 100%;
-} */
-.box-container-all .BOXS{
+.box-container-all img{
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+}
+.box-container-all .Check-team .Team-box:hover{
+   border: .2px solid #F75815;
+}
+.box-container-all .Check-team{
+   width: 100%;
+   height: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 10px;
+   margin-top: 2%;
+}
+.box-container-all .Check-team .Team-box{
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(255, 251, 246);
+   border-radius: 4px;
+   box-shadow: 2px 3px 2px rgba(51, 51, 51, 0.091);
+   padding: 10px;
+   gap: 20px;
+}
+.Check-team .Team-box .infor-detail 
+ h4{
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: #55465E;
+   margin-bottom: 1%;
+}
+.Check-team .Team-box .infor-detail span{
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #222222b5;
+  margin-bottom: 10%;
+}
+.Check-team  .Team-box .infor-detail p {
+   width: 95%;
+   margin-top: 4%;
+   font-size: .9rem;
+   line-height: 1.5;
+   font-weight: 400;
+   color: #55465ea5;
+}
+.Check-team .Team-box .social-icons{
+   margin-top: 5%;
+   display: flex;
+   justify-content:start;
+   align-items: center;
+   text-align: center;
    gap: 10px;
 }
-.box-container-all .BOXS .box{
-   width: 100%;
-   height: 200px;
-   background-color: #fff;
+.Check-team .Team-box .social-icons i{
+   width: 20px;
+   height: 20px;
+   font-size: 1.125rem;
+   background-color: #fcfafa;
+   box-shadow: 2px 3px 4px #3333332d;
+   color: #0e0d0d;
+   display: flex;
+   justify-content:center;
+   border-radius: 5px;
+   align-items: center;
+   text-align: center;
+  padding: 20px;
+}
+.Check-team .Team-box .social-icons i:hover{
+   color: #F75815;
+   border: 1px solid #F75815;
+   cursor: pointer;
 }
 
 
