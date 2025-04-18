@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/HomePage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ✅ PureCounter library -->
+  <script src="https://cdn.jsdelivr.net/gh/srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+
+
 </head>
 <body>
 
@@ -76,8 +81,8 @@
       <!-- About me section -->
        <section>
         <div class="container boder-b">
-       <div class="author-profile-container">
-     <div class="photo-info-column">
+       <div class="author-profile-container" data-aos="fade-up" data-aos-delay="100" >
+     <div class="photo-info-column ">
         <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-m-5.webp" alt="author image">
             <h2 class="author-name">Kevin Anderson</h2>
             <span>
@@ -85,15 +90,30 @@
         <p>Through my articles, I explore the intersection of technology and society, focusing on how emerging tech shapes our daily lives and future possibilities.</p>
         <div class="counts">
             <div class="count">
-                <h5>147</h5>
+                <h5 class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="147" 
+                data-purecounter-duration="1">
+              0
+            </h5>
             <span>Articles</span>
             </div>
             <div class="count">
-                <h5>13</h5>
+                <h5 class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="13" 
+                data-purecounter-duration="1">
+              0
+            </h5>
             <span>Awards</span>
             </div>
             <div class="count">
-                <h5>25</h5>
+                <h5 class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="25" 
+                data-purecounter-duration="1">
+              0
+            </h5>
             <span>Followers</span>
             </div>
         </div>
@@ -118,7 +138,7 @@
             <button>Future Tech Trends</button>
           </div>
 
-          <div class="author-articles">
+          <div class="author-articles" data-aos="fade-up" data-aos-delay="100">
             <h4 class="secondry-title">Featured Articles</h4>
             <div class="articles">
                 <div class="article">
@@ -216,5 +236,25 @@
      <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
      </div>
  </div>
+
+
+ <!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true, 
+    duration: 800,
+  });
+</script>
+
+
+ <!-- ✅ Manual Init -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new PureCounter();
+    });
+  </script>
+
 </body>
 </html>

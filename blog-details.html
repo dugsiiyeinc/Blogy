@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/HomePage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
@@ -70,6 +71,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
           </p>
         </div>
       </div>
@@ -79,13 +81,14 @@
         <div class="grid-container">
           <div  class="blog-details">
           <section>
-            <article class="article">
+            <article class="article" data-aos="fade-up">
               <!-- article info -->
               <div class="info">
-                <div class="blog-details-image">
+                <div class="blog-details-image" data-aos="zoom-in">
                   <img
                     src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp"
                     alt="Blog Details"
+                    loading="lazy"
                   />
                   <div class="overly-info">
                     <button>Web Development</button>
@@ -93,7 +96,7 @@
                     <span>6 min read</span>
                   </div>
                 </div>
-                <div class="blog-details-content">
+                <div class="blog-details-content" data-aos="fade-up" data-aos-delay="100">
                   <h2>
                     Modern Web Development: Best Practices and Future Trends for
                     2025
@@ -120,7 +123,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="detailed-info">
+                <div class="detailed-info" data-aos="fade-up" data-aos-delay="100">
                   <p class="desc1">
                     The landscape of web development continues to evolve at an
                     unprecedented pace, bringing new technologies, frameworks,
@@ -136,7 +139,7 @@
                     web development.
                   </p>
                 </div>
-                <div class="two-columns">
+                <div class="two-columns" data-aos="fade-up" data-aos-delay="100">
                   <div class="content-left">
                     <h4>The Rise of Web Components</h4>
                     <p>
@@ -167,7 +170,7 @@
                   </div>
                 </div>
                 <!-- trends -->
-                <div class="trends">
+                <div class="trends" data-aos="fade-up" data-aos-delay="100">
                   <h4>Key Trends in 2025</h4>
                   <ul>
                     <li>
@@ -183,15 +186,15 @@
                     </li>
                   </ul>
                 </div>
-                <h5 class="performance">Performance Optimization</h5>
-                <p class="performance-desc">
+                <h5 class="performance" data-aos="fade-up" data-aos-delay="100">Performance Optimization</h5>
+                <p class="performance-desc" data-aos="fade-up" data-aos-delay="100">
                   Performance remains a critical factor in web development, with
                   an increasing focus on Core Web Vitals and user experience
                   metrics. Modern applications must be optimized for both speed
                   and efficiency.
                 </p>
                 <!-- blockquote -->
-                <blockquote>
+                <blockquote data-aos="fade-up" data-aos-delay="100">
                   <p>
                     "The future of web development lies not just in writing
                     code, but in creating seamless, accessible, and performant
@@ -200,7 +203,7 @@
                   <cite>Emily Thompson, Web Performance Architect</cite>
                 </blockquote>
                 <!-- cards -->
-                <div class="cards">
+                <div class="cards" data-aos="fade-up" data-aos-delay="100">
                   <div class="card">
                     <div class="info-card">
                       <i class="bi bi-speedometer2"></i>
@@ -223,8 +226,8 @@
                     </div>
                   </div>
                 </div>
-                <h5 class="performance">Looking Forward</h5>
-                <p class="performance-desc">
+                <h5 class="performance" data-aos="fade-up" data-aos-delay="100">Looking Forward</h5>
+                <p class="performance-desc" data-aos="fade-up" data-aos-delay="100">
                   As we continue through 2025, web development practices will
                   further evolve, embracing new technologies while maintaining a
                   strong foundation in performance, accessibility, and user
@@ -234,7 +237,7 @@
                 </p>
               </div>
               <!-- related-topics -->
-              <div class="related-topics">
+              <div class="related-topics" data-aos="fade-up" data-aos-delay="100">
                 <h5>Related Topics</h5>
                 <button>Web Development</button>
                 <button>Performance</button>
@@ -254,7 +257,7 @@
             </article>
           </section>
           <!-- Author's info section  -->
-          <section>
+          <section data-aos="fade-up">
             <div class="author-card">
               <div class="img-icons">
                 <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-12.webp" alt="author-photo">
@@ -284,7 +287,7 @@
             </div>
           </section>
           <!-- comment section -->
-           <section class="comment-section">
+           <section class="comment-section" data-aos="fade-up">
             <h5>Discussion <span>(8)</span></h5>
              <div class="comments">
                <div class="comment-card">
@@ -372,7 +375,7 @@
            </section>
 
            <!-- comment form section  -->
-            <section class="comment-form-section">
+            <section class="comment-form-section" data-aos="fade-up">
               <h5>Share Your Thoughts</h5>
               <p>Your email address will not be published. Required fields are marked *</p>
              <form action="comment">
@@ -395,7 +398,7 @@
   
         </div>
           <!-- blog-details sidebar -->
-          <div class="side-bar">
+          <div class="side-bar" data-aos="fade-up" data-aos-delay="200" >
             <div class="search-box boxes">
               <label for="search">
                 <span class="side-bar-title">Search</span>
@@ -562,5 +565,22 @@
      </div>
  </div>
      
+
+
+ 
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true, 
+    duration: 800,
+  });
+</script>
+
+
+
+
+
   </body>
 </html>
