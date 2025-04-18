@@ -1,5 +1,10 @@
 /* blog-details.css */
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 .border-b{
   border-bottom: 1px solid color-mix(in srgb, #212529, transparent 90%);
 }

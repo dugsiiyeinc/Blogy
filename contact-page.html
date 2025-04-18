@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/HomePage.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -77,15 +79,15 @@
       <div class="container boder-b">
         <!-- cards section  -->
         <section>
-            <div class="contact-cards">
-                <div class="contact-card">
+            <div class="contact-cards" >
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100" >
                     <div class="contact-icon">
                         <i class="bi bi-geo-alt"></i>
                     </div>
                     <h3 class="secondry-title">Our Address</h3>
                     <p>2847 Rainbow Road, Springfield, IL 62701, USA</p>
                 </div>
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200" >
                     <div class="contact-icon">
                         <i class="bi bi-telephone">
 
@@ -94,7 +96,7 @@
                     <p>Mobile: +1 (555) 123-4567</p>
                     <p>Email: info@example.com</p>
                 </div>
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300" >
                     <div class="contact-icon">
                         <i class="bi bi-clock">
 
@@ -107,7 +109,7 @@
         </section>
 
         <!-- form  -->
-         <form action="user-register" class="contact-form">
+         <form action="user-register" class="contact-form" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
                 <div class="input-icon">
                 <span><i class="bi bi-person"></i></span>
@@ -212,5 +214,18 @@
      <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
      </div>
  </div>
+
+
+ <!-- JS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <script>
+   AOS.init({
+     once: true, 
+     duration: 800,
+   });
+ </script>
+ 
+
       </body>
       </html>
