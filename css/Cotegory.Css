@@ -23,24 +23,26 @@
     object-fit: cover;
   }
 
-.three-Divide{
-    margin-block: 4%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
+
+
 .three-Divide .div-left-contect{
-grid-column: 1 / span 2;
-display: grid;
-grid-template-columns: repeat(2 , 1fr);
-gap: 15px;
-}
-
-.blog{
-    background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-column: 1 / span 2;
 }
 
 
+
+
+@media (max-width: 900px){
+
+  .three-Divide .div-left-contect{
+    grid-template-columns: 1fr;
+  }
+  
+
+}
 
 
 

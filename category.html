@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/HomePage.css">
     <link rel="stylesheet" href="./css/blog-details.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
 </head>
 <body>
     <div class="container">
@@ -43,26 +46,33 @@
             </nav>
         </div>
      </section>
+  <!-- page-title -->
+  <div class="page-title">
+    <nav class="breadcrumb">
+      <ol>
+        <li class="breadcrumb-item">
+          <a href="/HomePage.html"
+            ><i class="bi bi-house"></i> Home <span> / </span>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="Category.html">Category <span> / </span></a>
+        </li>
+        <li class="breadcrumb-item active">Category</li>
+      </ol>
+    </nav>
+    <div class="title-wrapper">
+      <h1>Blog Details</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
 
-     <div class="container">
-        <section class="about-contect">
-            <ul class="nav-link">
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home /</a></li>
-                
-                <li><a href="#">Category /</a></li>
-                <li><a href="#">About Me</a></li>
-            </ul>
-    
-            <div class="about-body">
-                <h1>Blog Category</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, iste. Similique autem, qui ipsam placeat
-                    tempore soluta eius. Quidem, ratione!</p>
-            </div>
-        </section>
+      </p>
     </div>
+  </div>
        <!-- 3 grid body contect start here -->
         <div class="container">
-            <div class="three-Divide">
+            <div class="three-Divide grid-container" data-aos="fade-up">
                 <div class="div-left-contect">
                     <div class="grid-one">
                         <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-1.webp" alt="image">
@@ -156,9 +166,101 @@
                     </div>
                 </div>
                 <!-- blog-details sidebar -->
-                 <div class="blog">
-                    
-                 </div>
+          <div class="side-bar" data-aos="fade-up">
+            <div class="search-box boxes">
+              <label for="search">
+                <span class="side-bar-title">Search</span>
+                <div class="input-search-icon">
+                  <input type="search" placeholder="Search">
+                  <i class="bi bi-search"></i>
+                </div>
+              </label>
+            </div>
+            <div class="search-box boxes">
+              <div class="categories">
+                <h6 class="side-bar-title">Categories</h6>
+                <ul>
+                  <li>General <span>(25)</span> </li>
+                  <li>Lifestyle <span> (12)</span></li>
+                  <li>Travel <span> (5)</span></li>
+                  <li>Design <span> (22)</span></li>
+                  <li>Creative <span> (8)</span></li>
+                  <li>Education <span> (14)</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-box boxes">
+              <div class="categories">
+                <h6 class="side-bar-title">Categories</h6>
+                <ul>
+                  <li>General <span>(25)</span> </li>
+                  <li>Lifestyle <span> (12)</span></li>
+                  <li>Travel <span> (5)</span></li>
+                  <li>Design <span> (22)</span></li>
+                  <li>Creative <span> (8)</span></li>
+                  <li>Education <span> (14)</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-box boxes">
+              <div class="recent-posts">
+                    <h6 class="side-bar-title">Recent Posts</h6>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-1.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Nihil blanditiis at in nihil autem</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-2.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Quidem autem et impedit</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-3.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Id quia et et ut maxime similique occaecati ut</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-4.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Laborum corporis quo dara net para</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                    <div class="recent-post">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-square-5.webp" alt="photo">
+                    <div class="recent-post-info">
+                      <a href="#">Laborum corporis quo dara net para</a>
+                      <span>Jan 1, 2020</span>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="search-box boxes">
+                <div class="tags">
+                  <h6 class="side-bar-title">Tags</h6>
+                    <div class="tags-btn">
+                      <button>App</button>
+                      <button>IT</button>
+                      <button>Business</button>
+                      <button>Mac</button>
+                      <button>Design</button>
+                      <button>Office</button>
+                      <button>Creative</button>
+                      <button>Studio</button>
+                      <button>Smart</button>
+                      <button>Tips</button>
+                      <button>Marketing</button>
+                    </div>
+                </div>
+              </div>
+            </div>
                  
             </div>
         </div>
@@ -230,5 +332,18 @@
      <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
      </div>
  </div>
+
+
+ <!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true, 
+    duration: 800,
+  });
+</script>
+
+
 </body>
 </html>
