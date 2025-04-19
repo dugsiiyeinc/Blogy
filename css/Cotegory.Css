@@ -25,22 +25,39 @@
 
 
 
-.three-Divide .div-left-contect{
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+    padding: 3.75rem 0;
+  }
+  
+  
+
+ .div-left-contect{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   grid-column: 1 / span 2;
-}
+ }
+
 
 
 
 
 @media (max-width: 900px){
 
-  .three-Divide .div-left-contect{
+
+  .grid-container {
     grid-template-columns: 1fr;
   }
-  
+
+
+
+.div-left-contect{
+  grid-template-columns: 1fr;
+}
 
 }
 
