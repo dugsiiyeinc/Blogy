@@ -73,6 +73,9 @@
     color: #F75815;
  }
 
+ .menu{
+   display: none;
+ }
  /* Nav-bar  */
  .nav-cover{
     width: 100%;
@@ -101,20 +104,26 @@
 }
 /* body section style */
  .grids-container{
+   width: 100%;
+   height: 100%;
     margin-top: 2%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px ;
  }
  .grids-container .grid-one{
+   display: grid;
     grid-column: 1 / span 2;
-    grid-row: 1 span 3;
     width: 100%;
-    height: 481px;
-    background-image: url('	https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp');
+    height: 100%;
+    background-image: url('https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-3.webp');
     position: relative;
    border-radius: 10px;
+ }
+ .grids-container .grid-one img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
  }
   .contect{
     position: absolute;
@@ -136,7 +145,7 @@ cursor: pointer;
 }
 .grid-two{
 width: 100%;
-height: 481px;
+height: 30.0625rem;
 background-image:linear-gradient(to left, #98909016 , #cccccc10), url('https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-portrait-1.webp');
 background-position: center;
 background-size: cover;
@@ -145,7 +154,7 @@ border-radius: 10px;
 }
 
      .grid-three{
-        width: 416px;
+        width: 100%;
         height: 237px;
         background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.171)), url('https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-9.webp');
         background-position: center;
@@ -200,8 +209,8 @@ border-radius: 10px;
       .GRID-section{
          margin-top: 3%;
          display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         gap: 15px;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 15px ;
       }
       .GRID-section .grid-slide{
          
@@ -294,7 +303,7 @@ border-radius: 10px;
      .GRID-SECTION{
       margin-top: 4%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 15px;
      }
      /* general  */
@@ -621,9 +630,10 @@ font-weight: 700;
 /* Footer Design styles */
 .footer-grid{
    display: grid;
-   grid-template-columns: 300px repeat(4, 1fr);
+   grid-template-columns: 200px repeat(4, 1fr);
    align-content: center;
    justify-content: center;
+   align-items: center;
    gap: 10px;
    margin-block: 4%;
 }
@@ -637,7 +647,7 @@ gap: 24px;
 }
 .footer-grid .blogy .info{
    padding-top: 4%;
-   font-size: 1.1rem;
+   font-size: 1rem;
 }
 .footer-grid .blogy .social-icon i{
 display: inline-flex;
@@ -696,4 +706,103 @@ padding-left: 14px;
 .copyright div a{
    color: #F75815;
    cursor: pointer;
+}
+
+
+
+@media   screen and (max-width: 440px) {
+   #footer-grid{
+      width: 80%;
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 10px;
+     justify-content: center;
+    }
+}
+
+@media screen and  (max-width:780px) {
+
+   .nav-cover .nav-bar{
+      display: none;
+   }
+   .search-input{
+      display: none;
+   }
+   .menu{
+      width: 40px;
+      height: 40px;
+      position:sticky;
+      top: 0;
+      display: inline-block;
+      font-size: 1.35rem;
+      background-color: rgba(128, 128, 128, 0.484);
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-radius: 10px;
+   }
+   .menu i{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .menu:hover{
+      background-color: #F75815;
+      color: white;
+      cursor: pointer;
+   }
+   .grids-container{
+      width: 100%;
+      height: 100%;
+       margin-top: 2%;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 15px ;
+    }
+ .rids-container .fix{
+      width: 100%;
+   height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+   }
+ .grids-container  .grid-one , .grid-two , .grid-three{
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+ }
+
+ .GRID-SECTION{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px 
+ }
+ .grid-bottom{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px 
+ }
+ .big-continer{
+   display: flex;
+   flex-direction: column;
+ }
+ .box{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   
+ }
+ .right-img{
+   margin-top: 4%;
+   width: 90%;
+   height: 90%;
+   object-fit: cover;
+ }
+ .footer-grid{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+ }
 }
