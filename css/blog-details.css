@@ -967,3 +967,49 @@ align-items: center;
     align-items: center;
   }
 }
+
+
+
+@media   screen and (max-width: 440px) {
+  #footer-grid{
+     width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+   }
+}
+
+@media screen and  (max-width:780px) {
+
+  .nav-cover .nav-bar{
+     display: none;
+  }
+  .search-input{
+     display: none;
+  }
+  .menu{
+     width: 40px;
+     height: 40px;
+     position:sticky;
+     top: 0;
+     display: inline-block;
+     font-size: 1.35rem;
+     background-color: rgba(128, 128, 128, 0.484);
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     border-radius: 10px;
+  }
+  .menu i{
+   display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .menu:hover{
+     background-color: #F75815;
+     color: white;
+     cursor: pointer;
+  }
+
+}
