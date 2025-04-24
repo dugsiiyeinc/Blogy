@@ -14,38 +14,58 @@
    
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">Blogy</div>
-            <div class="left">
-                <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="search">
-                    <input type="text" name="search" id="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+  <!-- Header Logo and Icons -->
+  <div class="container">
+    <header class="header">
+        <div class="logo">Blogy</div>
+        <div class="left">
+            <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
-        </header>
-    </div>
-
-    <!-- nav-bar Top -->
-     <section class="nav-cover">
-        <div class="container">
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Category">Category</a></li>
-                    <li><a href="Blog-deteil">Blog -deteil</a></li>
-                    <li><a href="Author-Profile">Author Profile</a></li>
-                    <li><a href="Pages">Pages</a></li>
-                    <li><a href="Contect">Contect</a></li>
-                </ul>
-            </nav>
+            <div class="search">
+                <div class="search-input"><input type="text" name="search" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
+            </div>
         </div>
-     </section>
+    </header>
+</div>
+
+   <!--nav cover  -->
+   <section class="nav-cover">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
+<!-- nav-bar  nav-cover-->
+
+ <section class="nav-medium">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
   <!-- page-title -->
   <div class="page-title">
     <nav class="breadcrumb">
@@ -135,6 +155,21 @@
                         </div>
                     </div>
                     <div class="grid-one">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-1.webp" alt="image">
+                      <div class="content-info">
+                          <h2>Politics</h2>
+                          <p class="discription">Dolorum optio tempore voluptas dignissimos</p>
+                          <div class="info-profile">
+                              <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-12.webp"
+                                  alt="profile-one">
+                              <div class="info-pro">
+                                  <span class="name">Maria Doe</span><br>
+                                  <span class="date">20 MAY , 2026</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="grid-one">
                         <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-2.webp" alt="image">
                         <div class="content-info">
                             <h2>Sports</h2>
@@ -164,6 +199,21 @@
                             </div>
                         </div>
                     </div>
+                    <div class="grid-one">
+                      <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/blog/blog-post-1.webp" alt="image">
+                      <div class="content-info">
+                          <h2>Politics</h2>
+                          <p class="discription">Dolorum optio tempore voluptas dignissimos</p>
+                          <div class="info-profile">
+                              <img src="https://bootstrapmade.com/content/demo/Blogy/assets/img/person/person-f-12.webp"
+                                  alt="profile-one">
+                              <div class="info-pro">
+                                  <span class="name">Maria Doe</span><br>
+                                  <span class="date">20 MAY , 2026</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
                 <!-- blog-details sidebar -->
           <div class="side-bar" data-aos="fade-up">
@@ -265,9 +315,21 @@
             </div>
         </div>
 
-        <!-- footer Section Home Page Genaral Contect -->
+
+        <!-- button section -->
+         <div class="prev-btn">
+          <span class="btn"><i class="fa-solid fa-less-than"></i></span>
+          <span class="btn">1</span>
+          <span class="btn">2</span>
+          <span class="btn">3</span>
+          <span class="btn">4</span>
+          <span class="btn"><i class="fa-solid fa-ellipsis"></i></span>
+          <span class="btn">10</span>
+          <span class="btn"><i class="fa-solid fa-greater-than"></i></span>
+         </div>
+  <!-- footer Section Home Page Genaral Contect -->
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-grid" id="footer-grid">
          <div class="blogy">
              <h1 class="logo">Blogy</h1>
              <div class="info">
@@ -333,8 +395,8 @@
      </div>
  </div>
 
-
  <!-- JS -->
+ <script src="app.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
