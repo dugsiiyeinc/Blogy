@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/HomePage.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/blog-details.css">
 
 </head>
 <body>
@@ -21,46 +22,72 @@
                 <div class="search">
                     <div class="search-input"><input type="text" name="search" id="search">
                     <i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div class="menu"><i class="fa-solid fa-bars"></i></div>  
+                    <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
                 </div>
             </div>
         </header>
     </div>
 
-    <!-- nav-bar Top -->
-     <section class="nav-cover">
+    <!--nav cover  -->
+       <section class="nav-cover">
         <div class="container">
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Category">Category</a></li>
-                    <li><a href="Blog-deteil">Blog -deteil</a></li>
-                    <li><a href="Author-Profile">Author Profile</a></li>
-                    <li><a href="Pages">Pages</a></li>
-                    <li><a href="Contect">Contect</a></li>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="blog-details.html">Blog -deteil</a></li>
+                    <li><a href="author-profile.html">Author Profile</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="contact-page.html">Contect</a></li>
+                </ul>
+            </nav>
+        </div>
+     </section>
+    <!-- nav-bar  nav-cover-->
+
+     <section class="nav-medium">
+        <div class="container">
+            <nav class="nav-bar">
+                <ul>
+                    <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="blog-details.html">Blog -deteil</a></li>
+                    <li><a href="author-profile.html">Author Profile</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="contact-page.html">Contect</a></li>
                 </ul>
             </nav>
         </div>
      </section>
 
- <!-- AAbout Body -->
-<div class="container">
-    <section class="about-contect">
-        <ul class="nav-link">
-            <li><a href="#"><i class="fa-solid fa-house"></i>Home /</a></li>
-            
-            <li><a href="#">Category /</a></li>
-            <li><a href="#">About Me</a></li>
-        </ul>
+ <!-- page-title -->
+ <div class="page-title">
+    <nav class="breadcrumb">
+      <ol>
+        <li class="breadcrumb-item">
+          <a href="/HomePage.html"
+            ><i class="bi bi-house"></i> Home <span> / </span>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="Category.html">Category <span> / </span></a>
+        </li>
+        <li class="breadcrumb-item active">About</li>
+      </ol>
+    </nav>
+    <div class="title-wrapper">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
 
-        <div class="about-body">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, iste. Similique autem, qui ipsam placeat
-                tempore soluta eius. Quidem, ratione!</p>
-        </div>
-    </section>
-</div>
+      </p>
+    </div>
+  </div>
+
  <!-- About Us warning -->
 <div class="container">
     <div class="warning-about">
@@ -283,7 +310,17 @@
      </div>
  </div>
 
+<!-- JS -->
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    
+<script>
+  AOS.init({
+    once: true, 
+    duration: 800,
+  });
+</script>
+
+ 
 </body>
 </html>
