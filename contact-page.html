@@ -32,14 +32,14 @@
                 <div class="search">
                     <div class="search-input"><input type="text" name="search" id="search">
                     <i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div class="menu"><i class="fa-solid fa-bars"></i></div>  
+                    <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
                 </div>
             </div>
         </header>
     </div>
-  
-    <!-- nav-bar -->
-     <section class="nav-cover">
+    
+    <!--nav cover  -->
+       <section class="nav-cover">
         <div class="container">
             <nav class="nav-bar">
                 <ul>
@@ -49,12 +49,30 @@
                     <li><a href="blog-details.html">Blog -deteil</a></li>
                     <li><a href="author-profile.html">Author Profile</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="/contact-page.html">Contact</a></li>
+                    <li><a href="contact-page.html">Contect</a></li>
                 </ul>
             </nav>
         </div>
      </section>
-
+    
+    <!-- nav-bar  nav-cover-->
+     <section class="nav-medium">
+        <div class="container">
+            <nav class="nav-bar">
+                <ul>
+                    <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="blog-details.html">Blog -deteil</a></li>
+                    <li><a href="author-profile.html">Author Profile</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="contact-page.html">Contect</a></li>
+                </ul>
+            </nav>
+        </div>
+     </section>
+    
 
  <!-- page-title -->
     <div class="page-title">
@@ -150,76 +168,78 @@
         </div>
 
 
-          <!-- footer Section Home Page Genaral Contect -->
-  <div class="container">
-    <div class="footer-grid">
-         <div class="blogy">
-             <h1 class="logo">Blogy</h1>
-             <div class="info">
-                 <span>A108 Adam Street</span>
-                 <span>New York, NY 535022</span>
-                 <span><strong>Phone</strong>+1 5589 55488 55</span>
-                 <span><strong>Email: </strong>leoaahel4@gmail.com</span>
+    <!-- footer Section Home Page Genaral Contect -->
+    <div class="container">
+        <div class="footer-grid" id="footer-grid">
+             <div class="blogy">
+                 <h1 class="logo">Blogy</h1>
+                 <div class="info">
+                     <span>A108 Adam Street</span>
+                     <span>New York, NY 535022</span>
+                     <span><strong>Phone</strong>+1 5589 55488 55</span>
+                     <span><strong>Email: </strong>leoaahel4@gmail.com</span>
+                 </div>
+                 <div class="social-icon">
+                     <i class="fa-brands fa-x-twitter"></i>
+                     <i class="fa-brands fa-facebook-f"></i>
+                     <i class="fa-brands fa-instagram"></i>
+                     <i class="fa-brands fa-linkedin"></i>
+                 </div>
              </div>
-             <div class="social-icon">
-                 <i class="fa-brands fa-x-twitter"></i>
-                 <i class="fa-brands fa-facebook-f"></i>
-                 <i class="fa-brands fa-instagram"></i>
-                 <i class="fa-brands fa-linkedin"></i>
+             <div class="links">
+                 <p>Useful Links</p>
+                 <ul class="nav">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Service</a></li>
+                     <li><a href="">Team Service </a></li>
+                     <li><a href="">Privacy </a></li>
+                 </ul>
+             </div>
+             <div class="links">
+                 <p>Hic solutaset.</p>
+                 <ul class="nav">
+                     <li><a href="#">Molestiae accusamus iure</a></li>
+                     <li><a href="#">Excepturi dignissimos</a></li>
+                     <li><a href="#">Suscipit distinctio</a></li>
+                     <li><a href="#">Dilecta </a></li>
+                     <li><a href="#">Sit quas consectetur</a></li>
+                 </ul>
+             </div>
+             <div class="links">
+                 <p>Nobis illum</p>
+                 <ul class="nav">
+                     <li><a href="#">Web Design</a></li>
+                     <li><a href="#">Web Developer</a></li>
+                     <li><a href="#">Service</a></li>
+                     <li><a href="#">Marketing  </a></li>
+                     <li><a href="#">Graphic Design</a></li>
+                 </ul>
+             </div>
+             <div class="links">
+                 <p>Our Service .</p>
+                 <ul class="nav">
+                     <li><a href="#">Web Design</a></li>
+                     <li><a href="#">Web Developer</a></li>
+                     <li><a href="#">Service</a></li>
+                     <li><a href="#">Marketing  </a></li>
+                     <li><a href="#">Graphic Design</a></li>
+                 </ul>
              </div>
          </div>
-         <div class="links">
-             <p>Useful Links</p>
-             <ul class="nav">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="">About</a></li>
-                 <li><a href="">Service</a></li>
-                 <li><a href="">Team Service </a></li>
-                 <li><a href="">Privacy </a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Hic solutaset.</p>
-             <ul class="nav">
-                 <li><a href="#">Molestiae accusamus iure</a></li>
-                 <li><a href="#">Excepturi dignissimos</a></li>
-                 <li><a href="#">Suscipit distinctio</a></li>
-                 <li><a href="#">Dilecta </a></li>
-                 <li><a href="#">Sit quas consectetur</a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Nobis illum</p>
-             <ul class="nav">
-                 <li><a href="#">Web Design</a></li>
-                 <li><a href="#">Web Developer</a></li>
-                 <li><a href="#">Service</a></li>
-                 <li><a href="#">Marketing  </a></li>
-                 <li><a href="#">Graphic Design</a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Our Service .</p>
-             <ul class="nav">
-                 <li><a href="#">Web Design</a></li>
-                 <li><a href="#">Web Developer</a></li>
-                 <li><a href="#">Service</a></li>
-                 <li><a href="#">Marketing  </a></li>
-                 <li><a href="#">Graphic Design</a></li>
-             </ul>
+         <hr>
+       </div>
+     <div class="copyright">
+         <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
+         <div>
+         <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
          </div>
      </div>
-     <hr>
-   </div>
- <div class="copyright">
-     <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
-     <div>
-     <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
-     </div>
- </div>
-
-
- <!-- JS -->
+    
+     
+    <!-- JS -->
+    <script src="./app.js"></script> 
+    
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
  <script>
