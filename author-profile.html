@@ -22,40 +22,57 @@
 <body>
 
   
-<!-- header  -->
-<div class="container">
-  <header class="header">
-      <div class="logo">Blogy</div>
-      <div class="left">
-          <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-          </div>
-          <div class="search">
-              <div class="search-input"><input type="text" name="search" id="search">
-              <i class="fa-solid fa-magnifying-glass"></i></div>
-              <div class="menu"><i class="fa-solid fa-bars"></i></div>  
-          </div>
-      </div>
-  </header>
+  <div class="container">
+    <header class="header">
+        <div class="logo">Blogy</div>
+        <div class="left">
+            <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="search">
+                <div class="search-input"><input type="text" name="search" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
+            </div>
+        </div>
+    </header>
 </div>
 
-<!-- nav-bar -->
-<section class="nav-cover">
-  <div class="container">
-      <nav class="nav-bar">
-          <ul>
-              <li><a href="HomePage.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li><a href="category.html">Category</a></li>
-              <li><a href="blog-details.html">Blog -deteil</a></li>
-              <li><a href="author-profile.html">Author Profile</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="/contact-page.html">Contact</a></li>
-          </ul>
-      </nav>
-  </div>
-</section>
+<!--nav cover  -->
+   <section class="nav-cover">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
+
+<!-- nav-bar  nav-cover-->
+ <section class="nav-medium">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
 
 
 
@@ -173,9 +190,9 @@
 </div>
 </section>
 
-  <!-- footer Section Home Page Genaral Contect -->
-  <div class="container">
-    <div class="footer-grid">
+   <!-- footer Section Home Page Genaral Contect -->
+   <div class="container">
+    <div class="footer-grid" id="footer-grid">
          <div class="blogy">
              <h1 class="logo">Blogy</h1>
              <div class="info">
@@ -241,8 +258,10 @@
      </div>
  </div>
 
+ 
+<!-- JS -->
+<script src="./app.js"></script> 
 
- <!-- JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
