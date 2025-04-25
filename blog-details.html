@@ -15,8 +15,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-  
-<!-- header  -->
+ 
+
+
+
+
     <div class="container">
       <header class="header">
           <div class="logo">Blogy</div>
@@ -28,14 +31,14 @@
               <div class="search">
                   <div class="search-input"><input type="text" name="search" id="search">
                   <i class="fa-solid fa-magnifying-glass"></i></div>
-                  <div class="menu"><i class="fa-solid fa-bars"></i></div>  
+                  <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
               </div>
           </div>
       </header>
   </div>
 
-  <!-- nav-bar -->
-   <section class="nav-cover">
+  <!--nav cover  -->
+     <section class="nav-cover">
       <div class="container">
           <nav class="nav-bar">
               <ul>
@@ -45,11 +48,30 @@
                   <li><a href="blog-details.html">Blog -deteil</a></li>
                   <li><a href="author-profile.html">Author Profile</a></li>
                   <li><a href="#">Pages</a></li>
-                  <li><a href="/contact-page.html">Contact</a></li>
+                  <li><a href="contact-page.html">Contect</a></li>
               </ul>
           </nav>
       </div>
    </section>
+
+  <!-- nav-bar  nav-cover-->
+   <section class="nav-medium">
+      <div class="container">
+          <nav class="nav-bar">
+              <ul>
+                  <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                  <li><a href="HomePage.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="category.html">Category</a></li>
+                  <li><a href="blog-details.html">Blog -deteil</a></li>
+                  <li><a href="author-profile.html">Author Profile</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="contact-page.html">Contect</a></li>
+              </ul>
+          </nav>
+      </div>
+   </section>
+
 
 
     <!-- Main Content   -->
@@ -499,9 +521,10 @@
         </div>
     </main>
 
-     <!-- footer Section Home Page Genaral Contect -->
+
+    <!-- footer Section Home Page Genaral Contect -->
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-grid" id="footer-grid">
          <div class="blogy">
              <h1 class="logo">Blogy</h1>
              <div class="info">
@@ -566,11 +589,12 @@
      <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
      </div>
  </div>
-     
-
 
  
 <!-- JS -->
+<script src="./app.js"></script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
@@ -579,7 +603,6 @@
     duration: 800,
   });
 </script>
-
 
 
 
