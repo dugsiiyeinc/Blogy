@@ -42,13 +42,13 @@
   grid-column: 1 / span 2;
  }
 
- /* .prev-btn{
+.prev-btn{
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
   display: grid;
-  grid-column: -1;
-  grid-row: -1;
+  grid-column: 1 / span 2;
+  grid-auto-flow: column;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -74,7 +74,7 @@
 .prev-btn span:hover{
   background-color: #F75815;
   color: #fff;
-} */
+}
 
 
 
@@ -88,6 +88,11 @@
 
 
 .div-left-contect{
+  grid-template-columns: 1fr;
+}
+.prev-btn{
+  width: 100%;
+  display: grid;
   grid-template-columns: 1fr;
 }
 
