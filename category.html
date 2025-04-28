@@ -14,49 +14,69 @@
    
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">Blogy</div>
-            <div class="left">
-                <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="search">
-                    <input type="text" name="search" id="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+  <div class="container">
+    <header class="header">
+        <div class="logo">Blogy</div>
+        <div class="left">
+            <div class="socia-media-icon"><i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
-        </header>
-    </div>
-
-    <!-- nav-bar Top -->
-     <section class="nav-cover">
-        <div class="container">
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Category">Category</a></li>
-                    <li><a href="Blog-deteil">Blog -deteil</a></li>
-                    <li><a href="Author-Profile">Author Profile</a></li>
-                    <li><a href="Pages">Pages</a></li>
-                    <li><a href="Contect">Contect</a></li>
-                </ul>
-            </nav>
+            <div class="search">
+                <div class="search-input"><input type="text" name="search" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="menu" onclick="menuClick()"><i class="fa-solid fa-bars"></i></div>  
+            </div>
         </div>
-     </section>
+    </header>
+</div>
+
+<!--nav cover  -->
+   <section class="nav-cover">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
+<!-- nav-bar  nav-cover-->
+
+ <section class="nav-medium">
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><i class="fa-solid fa-xmark" onclick="Close()"></i></li>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="blog-details.html">Blog -deteil</a></li>
+                <li><a href="author-profile.html">Author Profile</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="contact-page.html">Contect</a></li>
+            </ul>
+        </nav>
+    </div>
+ </section>
+
   <!-- page-title -->
   <div class="page-title">
     <nav class="breadcrumb">
       <ol>
         <li class="breadcrumb-item">
-          <a href="/HomePage.html"
-            ><i class="bi bi-house"></i> Home <span> / </span>
+          <a href="HomePage.html"
+            ><i class="bi bi-house">Home  /</i> 
           </a>
         </li>
         <li class="breadcrumb-item">
-          <a href="Category.html">Category <span> / </span></a>
+          <a href="Category.html">Category /</a>
         </li>
         <li class="breadcrumb-item active">Category</li>
       </ol>
@@ -164,6 +184,17 @@
                             </div>
                         </div>
                     </div>
+          button section
+          <div class="prev-btn">
+            <span class="btn"><i class="fa-solid fa-less-than"></i></span>
+            <span class="btn">1</span>
+            <span class="btn">2</span>
+            <span class="btn">3</span>
+            <span class="btn">4</span>
+            <span class="btn"><i class="fa-solid fa-ellipsis"></i></span>
+            <span class="btn">10</span>
+            <span class="btn"><i class="fa-solid fa-greater-than"></i></span>
+           </div>
                 </div>
                 <!-- blog-details sidebar -->
           <div class="side-bar" data-aos="fade-up">
@@ -176,19 +207,7 @@
                 </div>
               </label>
             </div>
-            <div class="search-box boxes">
-              <div class="categories">
-                <h6 class="side-bar-title">Categories</h6>
-                <ul>
-                  <li>General <span>(25)</span> </li>
-                  <li>Lifestyle <span> (12)</span></li>
-                  <li>Travel <span> (5)</span></li>
-                  <li>Design <span> (22)</span></li>
-                  <li>Creative <span> (8)</span></li>
-                  <li>Education <span> (14)</span></li>
-                </ul>
-              </div>
-            </div>
+
             <div class="search-box boxes">
               <div class="categories">
                 <h6 class="side-bar-title">Categories</h6>
@@ -265,76 +284,76 @@
             </div>
         </div>
 
-        <!-- footer Section Home Page Genaral Contect -->
-  <div class="container">
-    <div class="footer-grid">
-         <div class="blogy">
-             <h1 class="logo">Blogy</h1>
-             <div class="info">
-                 <span>A108 Adam Street</span>
-                 <span>New York, NY 535022</span>
-                 <span><strong>Phone</strong>+1 5589 55488 55</span>
-                 <span><strong>Email: </strong>leoaahel4@gmail.com</span>
-             </div>
-             <div class="social-icon">
-                 <i class="fa-brands fa-x-twitter"></i>
-                 <i class="fa-brands fa-facebook-f"></i>
-                 <i class="fa-brands fa-instagram"></i>
-                 <i class="fa-brands fa-linkedin"></i>
-             </div>
-         </div>
-         <div class="links">
-             <p>Useful Links</p>
-             <ul class="nav">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="">About</a></li>
-                 <li><a href="">Service</a></li>
-                 <li><a href="">Team Service </a></li>
-                 <li><a href="">Privacy </a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Hic solutaset.</p>
-             <ul class="nav">
-                 <li><a href="#">Molestiae accusamus iure</a></li>
-                 <li><a href="#">Excepturi dignissimos</a></li>
-                 <li><a href="#">Suscipit distinctio</a></li>
-                 <li><a href="#">Dilecta </a></li>
-                 <li><a href="#">Sit quas consectetur</a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Nobis illum</p>
-             <ul class="nav">
-                 <li><a href="#">Web Design</a></li>
-                 <li><a href="#">Web Developer</a></li>
-                 <li><a href="#">Service</a></li>
-                 <li><a href="#">Marketing  </a></li>
-                 <li><a href="#">Graphic Design</a></li>
-             </ul>
-         </div>
-         <div class="links">
-             <p>Our Service .</p>
-             <ul class="nav">
-                 <li><a href="#">Web Design</a></li>
-                 <li><a href="#">Web Developer</a></li>
-                 <li><a href="#">Service</a></li>
-                 <li><a href="#">Marketing  </a></li>
-                 <li><a href="#">Graphic Design</a></li>
-             </ul>
-         </div>
-     </div>
-     <hr>
+ <!-- footer Section Home Page Genaral Contect -->
+ <div class="container">
+  <div class="footer-grid" id="footer-grid">
+       <div class="blogy">
+           <h1 class="logo">Blogy</h1>
+           <div class="info">
+               <span>A108 Adam Street</span>
+               <span>New York, NY 535022</span>
+               <span><strong>Phone</strong>+1 5589 55488 55</span>
+               <span><strong>Email: </strong>leoaahel4@gmail.com</span>
+           </div>
+           <div class="social-icon">
+               <i class="fa-brands fa-x-twitter"></i>
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-linkedin"></i>
+           </div>
+       </div>
+       <div class="links">
+           <p>Useful Links</p>
+           <ul class="nav">
+               <li><a href="HomePage.html">Home</a></li>
+               <li><a href="About.html">About</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Team Service </a></li>
+               <li><a href="#">Privacy </a></li>
+           </ul>
+       </div>
+       <div class="links">
+           <p>Hic solutaset.</p>
+           <ul class="nav">
+               <li><a href="#">Molestiae accusamus iure</a></li>
+               <li><a href="#">Excepturi dignissimos</a></li>
+               <li><a href="#">Suscipit distinctio</a></li>
+               <li><a href="#">Dilecta </a></li>
+               <li><a href="#">Sit quas consectetur</a></li>
+           </ul>
+       </div>
+       <div class="links">
+           <p>Nobis illum</p>
+           <ul class="nav">
+               <li><a href="#">Web Design</a></li>
+               <li><a href="#">Web Developer</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Marketing  </a></li>
+               <li><a href="#">Graphic Design</a></li>
+           </ul>
+       </div>
+       <div class="links">
+           <p>Our Service .</p>
+           <ul class="nav">
+               <li><a href="#">Web Design</a></li>
+               <li><a href="#">Web Developer</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Marketing  </a></li>
+               <li><a href="#">Graphic Design</a></li>
+           </ul>
+       </div>
    </div>
- <div class="copyright">
-     <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
-     <div>
-     <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
-     </div>
+   <hr>
  </div>
-
+<div class="copyright">
+   <p>© Copyright <strong>Blogy</strong>  All Rights Reserved</p>
+   <div>
+   <span> Designed by:</span> <a href="#">Clone Dugsiye Students</a>
+   </div>
+</div>
 
  <!-- JS -->
+  <script src="app.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
