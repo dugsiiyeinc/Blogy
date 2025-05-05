@@ -6,7 +6,7 @@ This project is a **responsive blog website** clone based on the [Blogy Template
 
 ## 📍 Live Preview
 
-🔗 [View the Website](https://blogy-zeta.vercel.app/index.html)
+🔗 [View the Website](https://blogy-git-main-sadiyas-projects-0b74238e.vercel.app/)
 
 ---
 
